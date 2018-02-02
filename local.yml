@@ -1,0 +1,32 @@
+---
+- name: Setup local machine
+  hosts: localhost
+  tasks:
+    - name: Copy Github private key
+      copy:
+        src: assets/secrets/ssh/id_rsa_github
+        dest: ~/.ssh/id_rsa_github
+        mode: 0700
+
+    - name: Copy ansible private key
+      copy:
+        src: assets/secrets/ssh/id_rsa
+        dest: ~/.ssh/id_rsa_ansible
+        mode: 0700
+
+    - name: Ensure github.com is a known host
+      lineinfile:
+        dest: ~/.ssh/known_hosts
+        create: yes
+        state: present
+        line: "{{ lookup('pipe', 'ssh-keyscan -t rsa github.com') }}"
+        regexp: "^github\\.com"
+
+    - name: Install pip
+      easy_install:
+        name: pip
+        state: latest
+
+    - name: Install pyrax
+      pip:
+        name: pyrax

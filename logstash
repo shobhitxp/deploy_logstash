@@ -1,0 +1,4 @@
+---
+#version of Java to be used
+pi_java_package_version: "openjdk-8-jdk"
+

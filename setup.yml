@@ -1,0 +1,11 @@
+---
+- name: Initial setup after ssh configuretion  Setup servers
+  hosts: all
+  remote_user: "{{ pi_remote_user }}"
+  become: yes
+  roles:
+  - role: common
+  - role: unzip
+  - role: linux_harden
+  vars_files:
+    - group_vars/shared

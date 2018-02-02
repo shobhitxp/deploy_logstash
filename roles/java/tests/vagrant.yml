@@ -1,0 +1,12 @@
+# test file for java
+---
+- hosts: all
+  remote_user: vagrant
+  become: true
+
+  vars:
+     pi_java_package_version: "openjdk-8-jdk"
+
+
+  roles:
+    - ../../iac-java

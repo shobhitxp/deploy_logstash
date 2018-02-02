@@ -1,0 +1,8 @@
+---
+#The variables required for the creatation of networks are define here can be changed according to the
+# Subnet IP Range
+rax_nw_subnet: "192.168.3.0/24"
+# Network name
+rax_network_private_name: "my-net-test"
+#Datacenter/provider region
+rax_dc_region: LON

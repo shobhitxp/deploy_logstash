@@ -1,0 +1,51 @@
+- src: git+ssh://git@github.com/Publish-Interactive/iac-rackspace_cloud_network.git
+  version: master
+  name: rackspace_cloud_network
+
+- src: git+ssh://git@github.com/Publish-Interactive/iac-rackspace_cloud_server.git
+  version: master
+  name: rackspace_cloud_server
+
+- src: git+ssh://git@github.com/Publish-Interactive/iac-custom_ssh_port.git
+  version: master
+  name: custom_ssh_port
+
+- src: git+ssh://git@github.com/Publish-Interactive/iac-users_and_groups.git
+  version: master
+  name: users_and_groups
+
+- src: git+ssh://git@github.com/Publish-Interactive/iac-common.git
+  version: master
+  name: common
+
+- src: git+ssh://git@github.com/Publish-Interactive/iac-unzip.git
+  version: master
+  name: unzip
+
+- src: git+ssh://git@github.com/Publish-Interactive/iac-linux_harden.git
+  version: master
+  name: linux_harden
+
+- src: git+ssh://git@github.com/Publish-Interactive/iac-java.git
+  version: master
+  name: geerlingguy.java
+
+- src: git+ssh://git@github.com/Publish-Interactive/iac-deploy_logstash.git
+  version: master
+  name: logstash
+
+- src: git+ssh://git@github.com/geerlingguy/ansible-role-elasticsearch.git
+  version: master
+  name: elasticsearch
+
+- src: git+ssh://git@github.com/geerlingguy/ansible-role-filebeat.git
+  version: master
+  name: filebeat
+
+- src: https://github.com/shobhitxp/config_logstash.git
+  version: master
+  name: logstash_config
+
+- src: git+ssh://git@github.com/Publish-Interactive/iac-rackspace_key_pair.git
+  version: master
+  name: rackspace_key_pair

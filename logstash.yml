@@ -1,0 +1,13 @@
+---
+- name: Configure as solr cloud server
+  hosts: all
+  remote_user: "{{ pi_remote_user }}"
+  sudo: yes
+  roles:
+  - role: geerlingguy.java
+  - role: elasticsearch
+  - role: logstash
+  - role: filebeat
+  - role: logstash_config
+  vars_files:
+  - group_vars/shared

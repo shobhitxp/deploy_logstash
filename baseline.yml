@@ -1,0 +1,11 @@
+---
+- name: Initial Setup servers
+  hosts: all
+  remote_user: root
+  become: yes
+  gather_facts: False
+  roles:
+  - role: custom_ssh_port
+  - role: users_and_groups
+  vars_files:
+    - group_vars/shared

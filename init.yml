@@ -1,0 +1,15 @@
+---
+- name: Initial Setup servers
+  hosts: localhost
+  roles:
+  - role: rackspace_cloud_network
+  - role: rackspace_key_pair
+  - role: rackspace_cloud_server
+    vars:
+       Name: logstash
+       pi_rackspace_group: logstash
+       count: 1
+       rax_register: rax.solr
+       key: "{{  rax_keypair }}"
+  vars_files:
+     - group_vars/shared
