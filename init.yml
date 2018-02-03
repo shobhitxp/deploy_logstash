@@ -9,7 +9,7 @@
        Name: logstash
        pi_rackspace_group: logstash
        count: 1
-       rax_register: rax.solr
+       rax_register: rax.logstash
        key: "{{  rax_keypair }}"
   vars_files:
      - group_vars/shared

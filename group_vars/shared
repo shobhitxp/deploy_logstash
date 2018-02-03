@@ -45,11 +45,5 @@ rax_keypair: "consultant01"
 #version of Java to be used
 pi_java_package_version: "openjdk-8-jdk"
 
-#IP addresses of Solr host
-pi_solr_solrhost_ips: "{{ pi_solr_host }}:{{ pi_solr_port }}"
-
 # Subnet IP Range
 nw_subnet: "192.168.13.0/24"
-
-# Network name
-network_name: "solrcloud"

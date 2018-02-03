@@ -13,8 +13,8 @@ ansible-galaxy install -p roles -r dependency_install.yml
 #Set location of RAX_CREDS_FILE as enviornment variable
 #export RAX_CREDS_FILE=$(readlink --canonicalize assets/secrets/rax_creds)
 
-#Rax module to create the required solr cluster
+#Rax module to create the required Logstash server
 ansible-playbook init.yml
 
-#Main playbook to do setup and run zookeeper and Solr
+#Main playbook to do setup and run  logstash
 ansible-playbook -i inventories/rax.py main.yml

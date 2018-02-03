@@ -1,5 +1,5 @@
 ---
-- name: Configure as solr cloud server
+- name: Configure as Logstash server
   hosts: all
   remote_user: "{{ pi_remote_user }}"
   sudo: yes
