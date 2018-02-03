@@ -1,8 +1,0 @@
----
-- name: Network create request
-  local_action:
-    module: rax_network
-    label: "{{ rax_network_private_name }}"
-    cidr: "{{ rax_nw_subnet }}"
-    region: "{{ rax_dc_region }}"
-    state: present

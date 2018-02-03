@@ -1,4 +1,0 @@
----
-- name: "Install unzip {{ pi_unzip_version }}"
-  become: yes
-  apt: pkg="unzip={{ pi_unzip_version }}" state=present
