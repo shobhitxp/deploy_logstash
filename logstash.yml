@@ -1,6 +1,6 @@
 ---
 - name: Configure as Logstash server
-  hosts: all
+  hosts: logstash
   remote_user: "{{ pi_remote_user }}"
   sudo: yes
   roles:

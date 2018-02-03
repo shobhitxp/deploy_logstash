@@ -6,8 +6,8 @@
   - role: rackspace_key_pair
   - role: rackspace_cloud_server
     vars:
-       Name: logstash
-       pi_rackspace_group: logstash
+       rax_server_name: logstash
+       rax_server_group: logstash
        count: 1
        rax_register: rax.logstash
        key: "{{  rax_keypair }}"
